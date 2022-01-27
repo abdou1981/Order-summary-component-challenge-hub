@@ -1,2 +1,6 @@
-# Order-summary-component-challenge-hub
- the challenge of frantend mentor, Order summary component challenge hub 
+# Frontend Mentor - Order summary card
+
+![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)
+
+## Welcome! 👋
+

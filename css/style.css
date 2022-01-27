@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Red Hat Display', sans-serif;
+}
+.parent {
+  width: 1440px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+}
+@media (max-width: 375px) {
+  .parent {
+    width: 100%;
+    background-image: url(../images/pattern-background-mobile.svg);
+    padding-top: 50px;
+  padding-bottom: 50px;
+  }
+} 
+.card {
+  width: 450px;
+  background-color: white;
+  padding-bottom: 50px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+@media (max-width: 375px) {
+  .card {
+    width: 300px;
+    padding-bottom: 20px;
+  }
+} 
+.head img {
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.card > div:nth-child(2) {
+  margin: 50px 50px 20px;
+  text-align: center;
+}
+.card > div:nth-child(2) h2 {
+  margin-bottom: 20px;
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+} 
+.card > div:nth-child(2) p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: hsl(224, 23%, 55%);
+} 
+@media (max-width: 375px) {
+  .card > div:nth-child(2) {
+    margin: 20px;
+  }
+} 
+.card > div:nth-child(3) {
+  margin: 30px 50px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  display: flex;
+  padding: 20px;
+}
+@media (max-width: 375px) {
+  .card > div:nth-child(3) {
+    margin: 20px;
+    padding: 10px;
+  }
+} 
+.card > div:nth-child(3) div:nth-child(2) {
+  padding: 0 15px;
+  line-height: 1.6;
+  color: hsl(223, 47%, 23%);
+  font-weight: 700;
+}
+.card > div:nth-child(3) div span {
+  color: hsl(224, 23%, 55%);
+  font-weight: normal;
+}
+.card > div:nth-child(3) div:nth-child(3){
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 45%;
+}
+@media (max-width: 375px) {
+  .card > div:nth-child(3) div:nth-child(3) {
+    width: 28%;
+  }
+} 
+.card > div:nth-child(3) div:nth-child(3) a:hover {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+}
+.card > div:nth-child(4) {
+  margin: 0 50px;
+}
+@media (max-width: 375px) {
+  .card > div:nth-child(4) {
+    margin: 20px;
+  }
+} 
+.card > div:nth-child(4) button {
+  border: none;
+  background-color: hsl(245, 75%, 52%);
+  width: 100%;
+  color: white;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.card > div:nth-child(4) button:hover {
+  background-color: hsl(224, 23%, 55%);
+}
+.card > div:nth-child(4) a {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  position: relative;
+  left: 36%;
+}
+.card > div:nth-child(4) a:hover {
+  color: hsl(223, 47%, 23%);
+}
